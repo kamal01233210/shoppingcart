@@ -17,7 +17,7 @@ var validator = require('express-validator');
 
 var app = express();
 
-mongoose.connect('mongodb://localhost:27017/shopping');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/shopping');
 require('./config/passport');
 //console.log(passport);
 // view engine setup
