@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodejs ./bin/www"
+    "start": "node ./bin/www"
+  },
+  "engines":{
+    "node":"6.11.4"
   },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",

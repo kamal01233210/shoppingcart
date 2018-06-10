@@ -1,8 +1,8 @@
-//Stripe.setPublishableKey('pk_test_PqvEX8Zwo3vwFa5F6x0UiHPg');
-alert('asdfd');
+Stripe.setPublishableKey('pk_test_PqvEX8Zwo3vwFa5F6x0UiHPg');
+
 var $form = $('#checkput-form');
 
-$form.submit(function(event){alert('aa');
+$form.submit(function(event){
 	$form.find('button').prop('disabled',true);
 	$('#charge-error').addClass('hidden');
 	Stripe.card.createToken({
